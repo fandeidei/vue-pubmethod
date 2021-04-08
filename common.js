@@ -36,5 +36,17 @@ export default {
                             }  
                 }
        }
+
+       //验证电话号码格式是否正确
+       Vue.prototype.verifyPhone = function(data){
+           let reg = /^1[3,4,5,6,7,8,9][0-9]{9}$/;
+           if(!reg.test(data)){
+               alert('当前电话格式不正确,请重新输入~')
+           }else{
+               console.log('当前电话号码正确')
+           }
+       }
+
+       //
    }
 }
