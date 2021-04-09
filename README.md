@@ -12,3 +12,7 @@
 ### this.fullScreen()
 ### 2.验证手机号格式
 ### this.verifyPhone(data) //data是你传的参数名
+### 3.数字每隔三位加个.符号 
+### 例子：123456->123.456
+### this.alterNumber(data) //data是你传的参数名
+### console.log('当前转换后的参数'+this.alterNumber(data))
