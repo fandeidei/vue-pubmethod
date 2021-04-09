@@ -47,6 +47,10 @@ export default {
            }
        }
 
-       //
+       //数字每隔三位数字加个小数点.号
+       Vue.prototype.alterNumber = function(data){
+            let num = data.toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,');
+            return num
+       }
    }
 }
