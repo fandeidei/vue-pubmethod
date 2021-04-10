@@ -52,5 +52,15 @@ export default {
             let num = data.toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,');
             return num
        }
+
+       //验证邮箱格式是否正确
+       Vue.prototype.verifyEmail = function(data){
+          let reg = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]/;
+          if(!reg.test(data)){
+              alert('当前邮箱格式不正确,请重新输入~')
+          }else{
+              console.log('当前邮箱格式正确')
+          }     
+       }
    }
 }
