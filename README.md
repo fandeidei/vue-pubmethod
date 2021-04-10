@@ -18,3 +18,10 @@
 ### console.log('当前转换后的参数'+this.alterNumber(data))
 ### 4.验证电子邮箱格式
 ### this.verifyEmail(data) //data是你传的参数名
+### 5.获取当前时间
+### this.getTime()
+### 用法：setInterval(() => {
+###          console.log(this.getTime())  
+###       },1000)
+### 备注:记得在销毁生命周期destroyed()移除定时器哦 不然会导致内存泄漏 
+
