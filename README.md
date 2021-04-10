@@ -16,3 +16,5 @@
 ### 例子：123456->123.456
 ### this.alterNumber(data) //data是你传的参数名
 ### console.log('当前转换后的参数'+this.alterNumber(data))
+### 4.验证电子邮箱格式
+### this.verifyEmail(data) //data是你传的参数名
