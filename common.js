@@ -81,5 +81,15 @@ export default {
         return timer
        }
 
+       //验证身份证是否正确
+       Vue.prototype.verifyIdentity = function(data){
+           let reg = /^[1-9][0-9]{5}([1][9][0-9]{2}|[2][0][0|1][0-9])([0][1-9]|[1][0|1|2])([0][1-9]|[1|2][0-9]|[3][0|1])[0-9]{3}([0-9]|[X])$/;
+           if(!reg.test(data)){
+              alert('当前身份证格式不正确,请重新输入~')
+            }else{
+                console.log('当前身份证格式正确')
+            }   
+        }
+
    }
 }
