@@ -91,5 +91,14 @@ export default {
             }   
         }
 
+       //点击回车触发方法
+      Vue.prototype.clickEnter = function(event,method){
+         let key = event.keycode
+         if(key == 13}{
+             method()
+         }
+
+      }
+
    }
 }
